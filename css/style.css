@@ -1,0 +1,37 @@
+.container-to-pdf {
+    margin-bottom: 100px;
+}
+
+.container-to-pdf .card {
+    overflow: hidden;
+}
+
+.card-container {
+    z-index: 999999;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-fluid,
+.card-deck {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-container {
+    display: flex;
+    height: 21cm !important;
+    width: 14.8cm !important;
+    border-radius: 5px;
+}
+
+.punk-card {
+    max-width: 110px;
+}
+
+.custom-message p {
+    font-weight: 500;
+}

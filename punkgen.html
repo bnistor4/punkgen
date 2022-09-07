@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PunkGen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Add jquery and custom.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/FileSaver.js"></script>
+</head>
+
+<body>
+    <div class="custom-nst-header">
+        <div class="container-flex pl-auto pr-auto">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            PUNK GEN
+          </a>
+
+                <div class="col-md-3 text-end">
+                    follow me on
+                    <a href="twitter.com/bnistor4" class="text-dark text-decoration-none"><i class="fab fa-twitter"></i
+            ></a>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-5 pb-5">
+            <div class="col-md-12">
+                <div class="website-tite">
+                    <h1>Welcome to <span>PunkGen</span></h1>
+                    <h6>
+                        Created by<a href="https://twitter.com/bnistor4">@bnistor4</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="elrondSelectNR">&#x1F60E; Punks Number:</label>
+                <select class="form-control" id="elrondSelectNR">
+            <option>Select value</option>
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+          </select>
+            </div>
+            <button type="button" class="btn btn-dark generate-pdf">
+          Download image
+        </button>
+            <div class="description-print pt-2">
+                <p>
+                    <strong>Note:</strong> You can download this image and print it on a paper (note: you have to adapt it to printing size)
+                </p>
+            </div>
+            <p></p>
+        </form>
+        <div class="container-to-pdf" id="container-to-pdf">
+            <div class="container-fluid card-deck"></div>
+        </div>
+    </div>
+</body>
+
+</html>
